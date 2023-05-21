@@ -1,0 +1,42 @@
+body {
+    background-color: #80808047;
+}
+
+header {
+    background: #62b5cfa1;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+span.title {
+    font-weight: bold;
+    color: white;
+}
+
+span.subtitle {
+    font-size: small;
+    color: gray;
+}
+
+.figure {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.example-square {
+    border: 1px solid red;
+    height: 20px;
+    width: 20px;
+}
