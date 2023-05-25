@@ -1,11 +1,151 @@
 body {
-    background-color: #80808047;
+    background-color: #E1E0E0;
+    margin: 0;
+    padding: 20px;
+    position: relative;
 }
 
 header {
-    background: #62b5cfa1;
+    width: 965px;
+    height: 100px;
+    background: #44B2F0;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.judul {
+    padding: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 10px;
     text-align: center;
-    padding: 20px 20px;
+    margin: auto;
+
+    color: #FFFFFF;
+}
+
+
+.card.bg-content {
+    width: 965px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: auto;
+    padding: 1px;
+}
+
+.card.header-hello {
+    width: 394px;
+    height: 38px;
+    background: #0C74AE;
+    border-radius: 17px;
+    margin: auto;
+    margin-top: 21px;
+}
+
+.card.header-welcome {
+    width: 585px;
+    height: 95px;
+    margin: auto;
+    margin-top: 20px;
+    background: #0C74AE;
+    border-radius: 7px;
+    padding: 1px;
+}
+
+.card.header-hello p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding: 4.5px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.card.header-welcome p.welcome {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    margin-top: 7.5px;
+
+    color: #FFFFFF;
+}
+
+.card.header-welcome p.deskripsi {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.card.button-nav {
+    margin: 0;
+    width: 74px;
+    height: 32px;
+    background: #6CBDF9;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 21px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.card.rumus-bangun-datar,
+.card.hitung-bangun-datar {
+    border: 1px solid black;
+    margin: auto;
+    margin: 25px 100px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.card-header {
+    background: #6CBDF9;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 50px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+img {
+    margin-right: 20px;
+}
+
+
+.card-body {
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
 }
 
 span.title {
@@ -19,14 +159,85 @@ span.subtitle {
 }
 
 .figure {
-    min-height: 50px;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-h3 {
+.card.formula-description,
+.card.hasil {
+    width: 300px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.card-header-rumus,
+.card-header-hasil {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+
+    background: #6CBDF9;
+    border-radius: 12px 12px 0px 0px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
     text-align: center;
+
+    color: #FFFFFF;
+}
+
+.card-body-rumus {
+    padding: 1px 20px;
+}
+
+.rumus-luas,
+.rumus-keliling,
+#output-luas,
+#output-keliling {
+    text-align: center;
+    width: 100px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 15px;
+    font-weight: 800;
+    font-family: 'Inter';
+}
+
+.ket-rumus-luas {
+    display: flex;
+    font-weight: 600;
+    font-family: 'Inter';
+    justify-content: space-around;
+}
+
+.ket-rumus-keliling {
+    display: flex;
+    font-weight: 600;
+    font-family: 'Inter';
+    justify-content: space-evenly;
+}
+
+.cara-rumus-luas {
+    font-weight: 600;
+    font-family: 'Inter';
+    margin: 20px 30px;
+}
+
+.card.form-hitung {
+    width: 263px;
+    padding: 15px 20px;
+    margin: auto;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 input {
@@ -35,8 +246,39 @@ input {
     padding: 5px;
 }
 
-.example-square {
-    border: 1px solid red;
-    height: 20px;
-    width: 20px;
+span#input-error {
+    color: red;
+}
+
+.button-group {
+    margin-top: 8px;
+}
+
+button.hitung {
+    width: 56.25px;
+    height: 24px;
+    border: 2px solid #1EA824;
+    background: #1EA824;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 600;
+    text-align: center;
+}
+
+button.reset-luas {
+    width: 56.25px;
+    height: 24px;
+    border: 2px solid #C92A2A;
+    background: #C92A2A;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 600;
+    text-align: center;
+}
+
+label {
+    font-family: 'Inter';
+    font-weight: 600;
 }

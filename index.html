@@ -9,40 +9,143 @@
 </head>
 <body>
     <header>
-        <span class="title">Katik</span> <span class="subtitle">Kalkulator Matematika</span>
+        <div class="judul">
+            <p class="title">KATIK</p>
+            <p class="subtitle">(Kalkulator Matematik)</p>
+        </div>
     </header>
 
     <!-- Content -->
     <main>
-        <div class="card">
-            <div class="figure">
-                <div class="example-square"></div>
-            </div>
-                <div class="formula-description">
-                    <p>Rumus Luas Persegi, yaitu :</p>
-                    <p>L = S x S</p>
-        
-                    <p>Di mana :</p>
-                    <p>L = Luas</p>
-                    <p>S = Sisi</p>
-                </div>
+        <div class="card bg-content">
 
-                <hr>
+            <div class="card header-hello">
+                <p>Hello World !</p>
+            </div>
+
+            <div class="card header-welcome">
+                <p class="welcome">Welcome to Katik</p>
+                <p class="deskripsi">Sebuah web apps sederhana yang berfungsi untuk menghitung Luas dan Keliling bangun datar.</p>
+            </div>
+
+            <div class="card button-nav">
+                Persegi
+            </div>
+
+        <div class="card rumus-bangun-datar">
+            <div class="card-header">
+                Rumus Luas & Keliling Persegi
+            </div>
+
+            <div class="card-body">
+                <div class="figure">
+                    <div class="example-square">
+                        <img src="assets/img/Persegi.png" alt="Persegi">
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <!-- Rumus luas -->
+                    <div class="card formula-description">
+                        <div class="card-header-rumus">
+                            <p>Rumus Luas Persegi</p>
+                        </div>
+                        <div class="card-body-rumus">
+                            <p class="rumus-luas">L = S x S</p>
+                
+                            <div class="ket-rumus-luas">
+                            <p>Keterangan :</p>
+                                <p>L = Luas</p>
+                                <p>S = Sisi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rumus Keliling -->
+                    <div class="card formula-description">
+                        <div class="card-header-rumus">
+                            <p>Rumus Keliling Persegi</p>
+                        </div>
+                        <div class="card-body-rumus">
+                            <p class="rumus-keliling">K = 4 x S</p>
+                
+                            <div class="ket-rumus-keliling">
+                            <p>Keterangan :</p>
+                                <p>S = Sisi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+                <div class="card hitung-bangun-datar">
+                    <div class="card-header">
+                        Hitung Luas & Keliling Persegi
+                    </div>
+        
+                    <div class="card-body">
+
+                        <div class="card form-hitung">
+
+                                <label>
+                                    Sisi    :
+                                    <input type="text" name="sisi-luas" id="sisi" onkeyup="validateSisi()">
+                                    <span id="input-error"></span>
+                                </label>
+                                <div class="button-group">
+                                    <button type="submit" id="submit" class="hitung" name="hitung" onclick="hitung(); validateForm();">Hitung</button>
+                                    <button type="reset" class="reset-luas" name="reset" onclick="reset()">Reset</button>
+                                </div>
+                            
+                        </div>
+                    
+                        <div class="row" id="hasil" style="display: none;">
+                            <!-- Hasil luas -->
+                            <div class="card hasil">
+                                <div class="card-header-hasil">
+                                    <p>Hasil Luas Persegi</p>
+                                </div>
+                                <div class="card-body-hasil">
+                                    <p class="result-luas" id="output-luas"></p>
+                        
+                                    <div class="cara-rumus-luas">
+                                    <p>Caranya :</p>
+                                    <p class="result-luas" id="rumus-luas"></p>
+                                    <p class="result-luas" id="perhitungan-luas"></p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Hasil Keliling -->
+                            <div class="card hasil">
+                                <div class="card-header-hasil">
+                                    <p>Hasil Keliling Persegi</p>
+                                </div>
+                                <div class="card-body-hasil">
+                                    <p class="result-luas" id="output-keliling"></p>
+                        
+                                    <div class="cara-rumus-luas">
+                                        <p>Caranya :</p>
+                                        <p class="result-luas" id="rumus-keliling"></p>
+                                        <p class="result-luas" id="perhitungan-keliling"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div>
-                    
-                        <h3>Hitung Luas Persegi</h3>
-                        <input id="sisi-luas" type="text" name="sisi-luas" required>
 
-                        <p class="result-luas" id="rumus-luas">L = S x S</p>
+                        <p class="result-luas" id="rumus-luas"></p>
                         <p class="result-luas" id="perhitungan-luas"></p>
-                        <p class="result-luas"><span id="output-luas">L </span></p>
 
-                        <button name="hitung-luas" onclick="hitungLuas()">Hitung</button>
-                        <button name="reset-luas">Reset</button>
-                    
+                        
                 </div>
-        </div>
+            </div>
     </main>
 
     <footer>
